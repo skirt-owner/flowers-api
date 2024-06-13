@@ -1,0 +1,21 @@
+{
+  "name": "flowers",
+  "version": "1.0.0",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./src/index.js"
+  },
+  "keywords": [],
+  "author": "skirt-owner",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "canvas": "^2.11.2",
+    "express": "^4.19.2",
+    "morgan": "^1.10.0",
+    "open-simplex-noise": "^2.5.0",
+    "randomcolor": "^0.6.2",
+    "winston": "^3.13.0"
+  }
+}
