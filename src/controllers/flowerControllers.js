@@ -35,11 +35,16 @@ const handleIncorrectPath = async (req, res) => {
     res.redirect('/error');
 };
 
+const mainRoute = async (req, res) => {
+    res.redirect('/status');
+};
+
 module.exports = {
     getStatus,
     getFlower,
     handleRouteNotFoundError,
     handleIncorrectPath,
+    mainRoute,
 };
   
   

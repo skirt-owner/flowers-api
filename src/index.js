@@ -4,7 +4,7 @@ const morganMiddleware = require('./middlewares/morgan.middleware');
 const crossDomainMiddleware = require('./middlewares/crossDomain.middleware');
 
 const {
-    handleRouteNotFoundError, handleIncorrectPath
+    handleRouteNotFoundError, handleIncorrectPath, mainRoute
 } = require('./controllers/flowerControllers');
 
 const router = require('./routes/flowerRoutes');
@@ -21,6 +21,8 @@ app.use(crossDomainMiddleware);
 app.use(morganMiddleware);
 
 app.use('/api', router);
+
+app.use('/', mainRoute);
 
 app.get('/error', handleRouteNotFoundError);
 
